@@ -1,0 +1,765 @@
+{
+	"info": {
+		"_postman_id": "46dc4096-32b8-4629-ac47-48655d9eb9c1",
+		"name": "POS Orchestrator_Checkouts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POS Checkouts",
+			"item": [
+				{
+					"name": "Create Checkout -with OrderId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"orderId\": \"611f81147edb9a17b789cb1e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Checkout -without OrderId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"jsonData = pm.response.json()\r",
+									"pm.environment.set('checkoutId', jsonData.checkoutId);\r",
+									"pm.environment.set(\"version\", jsonData.metadata.entityVersion)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Checkout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"jsonData = pm.response.json()\r",
+									"pm.environment.set('checkoutId', jsonData.checkoutId);\r",
+									"pm.environment.set(\"version\", jsonData.metadata.entityVersion)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Add items (barcode)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"jsonData = pm.response.json()\r",
+									"pm.environment.set('checkoutId', jsonData.checkoutId);\r",
+									"pm.environment.set(\"version\", jsonData.metadata.entityVersion);\r",
+									"pm.environment.set(\"orderItemId\", jsonData.posOrder.items[0].orderItemId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"barcode\": \"232323\",\r\n\r\n\r\n  \"entryMethod\": \"SCANNED\",\r\n  \"inputAttributes\": {\r\n    \"additionalProp1\": \"string\",\r\n    \"additionalProp2\": \"string\",\r\n    \"additionalProp3\": \"string\"\r\n  },\r\n  \"attributes\": {\r\n    \"additionalProp1\": {},\r\n    \"additionalProp2\": {},\r\n    \"additionalProp3\": {}\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/barcode",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"barcode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Change item qty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"jsonData = pm.response.json()\r",
+									"pm.environment.set('checkoutId', jsonData.checkoutId);\r",
+									"pm.environment.set(\"version\", jsonData.metadata.entityVersion);\r",
+									"pm.environment.set(\"orderItemId\", jsonData.posOrder.items[0].orderItemId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/items/{{orderItemId}}/quantity",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"items",
+								"{{orderItemId}}",
+								"quantity"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Void item from order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"jsonData = pm.response.json()\r",
+									"pm.environment.set('checkoutId', jsonData.checkoutId);\r",
+									"pm.environment.set(\"version\", jsonData.metadata.entityVersion);\r",
+									"pm.environment.set(\"orderItemId\", jsonData.posOrder.items[0].orderItemId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/items/{{orderItemId}}/void",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"items",
+								"{{orderItemId}}",
+								"void"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Order Payment",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"authorizedAmount\": {\r\n    \"amount\": 1,\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"tenderId\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/payments",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Finish Checkout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/finish",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"finish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Cancel Checkout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/cancel",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Void Payment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/payments/{{orderPaymentId}}/void",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"payments",
+								"{{orderPaymentId}}",
+								"void"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Change item price",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"jsonData = pm.response.json()\r",
+									"pm.environment.set('checkoutId', jsonData.checkoutId);\r",
+									"pm.environment.set(\"version\", jsonData.metadata.entityVersion);\r",
+									"pm.environment.set(\"orderItemId\", jsonData.posOrder.items[0].orderItemId)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"unitPrice\": 0.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/items/{{orderItemId}}/unit-price",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"items",
+								"{{orderItemId}}",
+								"unit-price"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Add items",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n\r\n  \"itemId\": \"232323\",\r\n  \"quantity\": 1,\r\n  \"entryMethod\": \"SCANNED\",\r\n  \"inputAttributes\": {\r\n\r\n\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/items",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - With Barcode Translation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n  \"barcode\": \"2115706002345\",\r\n  \"symbology\": \"EAN13\",\r\n  \r\n  \"entryMethod\": \"SCANNED\",\r\n  \"inputAttributes\": {\r\n    \"additionalProp1\": \"string\",\r\n    \"additionalProp2\": \"string\",\r\n    \"additionalProp3\": \"string\"\r\n  },\r\n  \"attributes\": {\r\n    \"additionalProp1\": {},\r\n    \"additionalProp2\": {},\r\n    \"additionalProp3\": {}\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/barcode",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"barcode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout - Add items - Weighed item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{ecp-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientContext\": {\r\n    \"touchpointId\": \"{{touchpointID}}\",\r\n    \"currencyCode\": \"{{currency}}\"\r\n  },\r\n\r\n  \"itemId\": \"423456\",\r\n  \"quantity\": 1,\r\n  \"entryMethod\": \"SCANNED\",\r\n  \"inputAttributes\": {\r\n\"measuredUnits\": \"1\"\r\n\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pos/checkouts/{{checkoutId}}/{{version}}/order/items",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pos",
+								"checkouts",
+								"{{checkoutId}}",
+								"{{version}}",
+								"order",
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "checkoutId",
+			"value": ""
+		},
+		{
+			"key": "version",
+			"value": ""
+		},
+		{
+			"key": "entityVersion",
+			"value": ""
+		},
+		{
+			"key": "orderItemId",
+			"value": ""
+		}
+	]
+}
