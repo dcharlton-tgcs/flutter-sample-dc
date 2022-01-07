@@ -1,0 +1,43 @@
+=== Quality and Support
+
+Design and test practices, available skills, industry trends.
+
+|====
+|| React Native | Flutter | iOS/ Andriod
+
+| Design
+| Native Wrappers
+| Material / Cupertino / Custom
+| Native
+
+| Testing
+| No official testing support3rd party - Jest, Appium / Detox
+| Unit / Widget and Integration Testing (built-in)
+| Varies
+
+| Adoption
+| High (shrinking)
+| High (growing)
+| Medium (stable)
+
+| Documentation
+| Poor
+| Good
+| Average
+
+| Libraries
+| Mostly 3rd party (unofficial)
+| Mostly supported (official) pub.dev
+| Varies
+
+| Score
+| 2.5
+| 5
+| 3
+|====
+
+.References
+* https://trends.google.com/trends/explore?date=today%205-y&q=Flutter,React%20Native,Native%20Script,Xamarin,Cordova
+* https://www.smashingmagazine.com/2020/09/unit-testing-react-native-applications
+* https://flutter.dev/docs/testing
+* https://medium.com/flutter/updates-on-flutter-testing-f54aa9f74c7e

@@ -1,0 +1,22 @@
+{
+  "name": "auth_service",
+  "version": "1.0.0",
+  "description": "Plugin package - auth_service",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "pretest": "flutter pub run build_runner build --delete-conflicting-outputs",
+    "test": "npm run flutter:test",
+    "flutter:test": "flutter test --coverage --test-randomize-ordering-seed random",
+    "flutter:coverage": "genhtml coverage/lcov.info -o coverage"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
+    "concurrently": "^6.0.0",
+    "husky": "^6.0.0",
+    "json-server": "~0.16.0",
+    "nodemon": "^2.0.0",
+    "wait-on": "^5.0.0"
+  }
+}

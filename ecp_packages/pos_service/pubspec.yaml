@@ -1,0 +1,41 @@
+name: pos_service
+description: Lightweight API layer to ECP Back-End POS Service.
+version: 0.0.1
+homepage: http://www.toshibatec-eu.com/
+publish_to: none
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: '>=1.20.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^8.0.1
+  flutter_bloc: ^8.0.0
+  http: ^0.13.1
+  equatable: ^2.0.3
+  ecp_common:
+    path: ../ecp_common
+  auth_service:
+    path: ../auth_service
+  ecp_openapi:
+    git:
+      url: git@github.com:tgcs-ecp/model-generator.git
+      ref: 1.0.4-2021-11-24
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+  bloc_test: ^9.0.1
+  build_runner:
+  mocktail: ^0.2.0
+  mockito: ^5.0.16
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.tgcs.pos_service
+        pluginClass: PosServicePlugin

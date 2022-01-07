@@ -1,0 +1,12 @@
+=== Overview
+
+There are a number of opportunities to build mobile applications, either as Apps which can be deployed to a device or Responsive websites that can be viewed on the built in web browser on a device. This document gives a summary of the most commonly found methods of building Apps.
+
+.React Native 
+Created by Facebook in 2015 with the goal of bringing the Facebook website onto a mobile application and leveraging the native features of a mobile device (such as the device camera). It is designed around the same principles as the React Framework used to build the Facebook website; however while parts of React and React Native share features React Native does not replace React as a framework to build websites. React Native applications are written in JavaScript. 
+
+.Flutter 
+Created by Google in 2017 with the goal of having a single development ecosystem to create both mobile Apps and websites from a single codebase. As a framework flutter is opinionated about how to develop mobile Apps; as such developers are given all the tools they need by default for; Development, Testing, Debugging and Deployment. It includes design widgets both for the Material (Android) and Cupertino (iOS) standards. Flutter applications are written in Dart.
+
+.iOS / Android (True Native App Development) 
+True native Application development requires multiple skillsets, either Objective-C or Swift (iOS) and Java or Kotlin (Android). Building applications using Native technologies gives a best in class software solution regarding device capabilities and performance, however it requires maintaining multiple codebases and as such is not an efficient way of building applications which do not require 3D graphics or other limited features. For the purposes of this document this technology is the baseline against which we shall discuss using React Native or Flutter.

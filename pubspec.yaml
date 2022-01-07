@@ -1,0 +1,68 @@
+name: ui_flutter_app
+description: A new Flutter project.
+version: 0.34.3
+publish_to: none
+
+environment:
+  sdk: '>=2.12.0-0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  bloc: ^8.0.1
+  flutter_bloc: ^8.0.0
+  intl: ^0.17.0
+  http: ^0.13.1
+  equatable: ^2.0.3
+  flutter_slidable: ^1.0.0-dev.6 #TODO Move to non-dev version when published
+
+  auth_service:
+    path: ecp_packages/auth_service
+  ecp_common:
+    path: ecp_packages/ecp_common
+  pos_service:
+    path: ecp_packages/pos_service
+  ecp_logger:
+    path: ecp_packages/ecp_logger
+  ecp_openapi:
+    git:
+      url: git@github.com:tgcs-ecp/model-generator.git
+      ref: 1.0.4-2021-11-24
+  ui_peripheral_agent:
+    git:
+      url: git@github.com:tgcs-ecp/ui_peripheral_agent.git
+      ref: 1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+  bloc_test: ^9.0.1
+  mocktail: ^0.2.0
+  mockito: ^5.0.16
+  build_runner:
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/delete.png
+    - assets/images/PayPalTender.png
+    - assets/images/CardTender.png
+
+  fonts:
+    - family: ECPIcons
+      fonts:
+        - asset: assets/fonts/ECPIcons.ttf
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800

@@ -1,0 +1,249 @@
+{
+  "@@locale": "de",
+  "launchScreenText": "Warten Sie mal...",
+  "@launchScreenText": {
+    "description": "Auf dem Startbildschirm angezeigter Text"
+  },
+  "processingScreenText": "Transaktion verarbeiten...",
+  "@processingScreenText": {
+    "description": "Auf dem Verarbeitungsbildschirm angezeigter Text"
+  },
+  "mobilePosAppBarTitle": "ECP Mobile POS",
+  "@mobilePosAppBarTitle": {
+    "description": "Text, der in der AppBar der mobilen POS-Anwendung angezeigt wird"
+  },
+  "welcomeLoginButtonText": "Einloggen",
+  "@welcomeLoginLabelText": {
+     "description": "Text für den Login-Button auf der Willkommensseite"
+  },
+  "welcomeOnboardDeviceButtonText": "Onboard-Gerät",
+  "@welcomeOnboardDeviceButtonText": {
+     "description": "Text für die Schaltfläche des integrierten Geräts auf der Willkommensseite"
+  },
+  "welcomeHeadingLabelText": "Willkommen bei EuroCIS,",
+  "@welcomeHeadingLabelText": {
+    "description": "Text für die Begrüßungsüberschriftsbezeichnung"
+  },
+  "welcomeLabelText": "Was möchtest du heute machen?",
+  "@welcomeLabelText": {
+    "description": "Text für Willkommensetikett"
+  },
+  "welcomeHeaderPlaceholder": "Willkommen",
+  "@welcomeHeaderPlaceholder": {
+    "description": "Kopfzeilen-Platzhalter für Willkommensseite"
+  },
+  "basketPageHeaderPlaceholder": "Warenkorbseite",
+  "@basketPageHeaderPlaceholder": {
+    "description": "Kopfzeilen-Platzhalter für Warenkorbseite"
+  },
+  "paymentPageHeaderPlaceholder": "Zahlung",
+  "@paymentPageHeaderPlaceholder": {
+    "description": "Kopfzeilen-Platzhalter für Zahlungsseite"
+  },
+  "welcomeNeedHelpLabelText": "Brauchen Sie Hilfe?",
+   "@welcomeNeedHelpLabelText": {
+     "description": "Text zur Begrüßung benötige Hilfe-Etikett"
+   },
+  "welcomeErrorLabelText": "Bei der Anmeldung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut.",
+  "@welcomeErrorLabelText": {
+    "description": "Text für Begrüßungsfehlerlabel"
+  },
+  "usernameLabel": "Nutzername",
+  "@usernameLabel": {
+    "description": "Benutzername von der Anmeldeseite"
+  },
+  "passwordLabel": "Passwort",
+  "@passwordLabel": {
+    "description": "Kennwortbezeichnung von der Anmeldeseite"
+  },
+  "credentialsError": "Fehler bei den Anmeldeinformationen",
+  "@credentialsError": {
+    "description": "Anmeldeinformationen Fehlermeldung"
+  },
+  "badUrlserviceLogin": "Authentifizierungsdienst nicht verfügbar",
+  "@badUrlserviceLogin": {
+    "description": "Fehlermeldung Anmeldedienst nicht gefunden"
+  },
+  "loginButton": "Anmeldung",
+  "@loginButton": {
+    "description": "Anmeldeschaltfläche für Anmeldeseite"
+  },
+  "logoutLabel": "Ausloggen",
+  "@logoutLabel": {
+    "description": "Abmelden-Label für Warndialog"
+  },
+  "logoutContent": "Möchten Sie sich wirklich abmelden?",
+  "@logoutContent": {
+    "description": "Inhaltsnachricht abmelden"
+  },
+  "yesButtonText": "Ja",
+  "@yesButtonText": {
+    "description": "Text für Ja-Schaltfläche"
+  },
+  "noButtonText": "Nein",
+  "@noButtonText": {
+    "description": "Text für keine Schaltfläche"
+  },
+  "transactionCompletedHeadingText": "Transaktion abgeschlossen.",
+  "@transactionCompletedHeadingText": {
+    "description": "Text für die Seite Transaktion abgeschlossen"
+  },
+  "transactionCompletedPrintReceiptText": "Möchte der Kunde eine Quittung?",
+  "@transactionCompletedPrintReceiptText": {
+    "description": "Text mit der Frage, ob der Kunde eine Quittung drucken möchte"
+  },
+  "orderCompletedConfirmation": "Kasse erfolgreich abgeschlossen",
+  "@orderCompletedConfirmation": {
+    "description": "Text zur Bestätigung, wenn die Bestellung erfolgreich übermittelt/abgeschlossen wurde"
+  },
+  "printReceiptConfirmation": "Quittung erfolgreich gedruckt",
+  "@printReceiptConfirmation": {
+    "description": "Warnungsbeschreibung beim Drücken von Ja zum Drucken des Belegs"
+  },
+  "printReceiptFailed": "Quittung konnte nicht gedruckt werden!",
+  "@printReceiptFailed": {
+    "description": "Fehlerbeschreibung beim Drücken von Ja zum Drucken des Kassenbons"
+  },
+  "retryPrintReceiptText": "Quittungsdruck fehlgeschlagen. Möchten Sie es erneut versuchen?",
+  "@retryPrintReceiptText": {
+    "description": "Text mit der Frage, ob der Kunde den Ausdruck des Belegs wiederholen möchte"
+  },
+  "retryButtonText": "Wiederholen",
+  "@retryButtonText": {
+    "description": "Text für die Schaltfläche Wiederholen"
+  },
+  "basketTotalsTotallabelText": "Gesamt:",
+  "@basketTotalsTotallabelText": {
+    "description": "Text für das gesamte Etikett"
+  },
+  "basketTotalsItemslabelText": "Artikel:",
+  "@basketTotalsItemslabelText": {
+    "description": "Text für Artikeletikett"
+  },
+  "basketCheckoutButtonText": "Zur Kasse",
+  "@basketCheckoutButtonText": {
+    "description": "Text für die Checkout-Schaltfläche"
+  },
+  "navbarScanButtonText": "Scan",
+  "@navbarScanButtonText": {
+    "description": "Text für die Schaltfläche zum Scannen der Navigationsleiste"
+  },
+  "navbarKeypadButtonText": "Tastenfeld",
+  "@navbarKeypadButtonText": {
+    "description": "Text für die Schaltfläche der Navigationsleisten-Tastatur"
+  },
+  "navbarSettingsButtonText": "Einstellungen",
+  "@navbarSettingsButtonText": {
+    "description": "Text für die Schaltfläche für die Einstellungen der Navigationsleiste"
+  },
+  "navbarBasketButtonText": "Warenkorbseite",
+  "@navbarBasketButtonText": {
+    "description": "Text für den Warenkorb-Button in der Navigationsleiste"
+  },
+  "checkoutCouponButtonText": "Coupon",
+  "@checkoutCouponButtonText": {
+    "description": "Text für den Gutscheinknopf auf dem Schieberegler zur Kasse"
+  },
+  "checkoutCardButtonText": "Karte",
+  "@checkoutCardButtonText": {
+    "description": "Text für die Kartenschaltfläche auf dem Schieberegler zur Kasse"
+  },
+  "tenderSliderHeaderLabel": "Wählen Sie die Zahlungsmethode",
+  "@tenderSliderHeaderLabel": {
+    "description": "Text für die Überschrift des Angebotsschiebereglers"
+  },
+  "checkoutPaymentConfirmation": "Zahlung erfolgreich angenommen",
+  "@checkoutPaymentConfirmation": {
+    "description": "Bestätigungstext bei erfolgreicher zahlung"
+  },
+  "checkoutPaymentFailed": "Fehler beim Verarbeiten der Zahlung",
+  "@checkoutPaymentFailed": {
+    "description": "Text für fehlgeschlagene Zahlung"
+  },
+  "keypadInputHintText": "Geben Sie Barcode / Produktcode ein",
+  "@keypadInputHintText": {
+    "description": "Eingabehinweis für die Tastatur, in den Barcode eingefügt wird"
+  },
+  "keypadClearButtonText": "löschen",
+  "@keypadClearButtonText": {
+    "description": "Der Befehl Löschen löscht die Barcode-Eingabe"
+  },
+  "keypadAddButtonText": "Hinzufügen",
+  "@keypadAddButtonText": {
+    "description": "Mit dem Befehl Hinzufügen wird ein Artikel zum Warenkorb hinzugefügt"
+  },
+  "keypadQuantityLabelText": "Anzahl der Teile",
+  "@keypadQuantityLabelText": {
+    "description": "Beschriftungstext für das Tastaturfeld mit Mengenanzeige"
+  },
+  "okButtonText": "OK",
+  "@okButtonText": {
+    "description": "Text für OK-Button"
+  },
+  "slidableDeleteText": "Löschen",
+  "@slidableDeleteText": {
+    "description": "Text für verschiebbare Löschtaste"
+  },
+  "errorResetToReadyStateText": "Zurücksetzen",
+  "@errorResetToReadyStateText": {
+    "description": "Zurücksetzen in den Zustand Bereit"
+  },
+  "voidTransactionText": "Transaktion stornieren",
+  "@voidTransactionText": {
+    "description": "Text für ungültiges Transaktionsetikett"
+  },
+  "voidTransactionConfirmationText": "Möchten Sie diese Transaktion wirklich stornieren? Das kann nicht rückgängig gemacht werden.",
+  "@voidTransactionConfirmationText": {
+    "description": "Text zur Bestätigung der ungültigen Transaktion"
+  },
+  "closeButtonText": "Nah dran",
+  "@closeButtonText": {
+    "description": "Text für Schließen-Button"
+  },
+  "unknownItemLabelText": "Unbekannter Artikel",
+  "@unknownItemLabelText": {
+    "description": "Text für unbekanntes Artikellabel"
+  },
+  "blockedItemLabelText": "Artikel nicht zu verkaufen",
+  "@blockedItemLabelText": {
+    "description": "Text für das Label des gesperrten Artikels"
+  },
+  "quantityCannotbeZeroLabelText": "Menge darf nicht null sein",
+  "@quantityCannotbeZeroLabelText": {
+    "description": "Text für Menge darf kein Null-Label sein"
+  },
+  "checkoutAlreadyExistLabelText": "Kasse existiert bereits",
+  "@checkoutAlreadyExistLabelText": {
+    "description": "Text für die Kasse existiert bereits Label"
+  },
+  "morningGreetings": "Guten Morgen, {firstName}!",
+  "@morningGreetings": {
+    "description": "Begrüßen Sie den Benutzer morgens mit seinem Namen.",
+    "placeholders": {
+      "firstName": {
+        "type": "String",
+        "example": "ECP-Benutzer"
+      }
+    }
+  },
+  "afternoonGreetings": "Guten Tag,  {firstName}!",
+  "@afternoonGreetings": {
+    "description": "Begrüßen Sie den Benutzer am Nachmittag mit Namen.",
+    "placeholders": {
+      "firstName": {
+        "type": "String",
+        "example": "ECP-Benutzer"
+      }
+    }
+  },
+  "userIDLabelText": "Benutzeridentifikation {userID}",
+  "@userIDLabelText": {
+    "description": "Benutzeridentifikationsnummer",
+    "placeholders": {
+      "userID": {
+        "type": "String",
+        "example": "ECP-Benutzer-ID"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+=== Conclusion
+
+|====
+|| React Native | Flutter | iOS/ Andriod
+
+| Technology
+| 4.5
+| 5.5
+| 2
+
+| Quality
+| 2.5
+| 5
+| 3
+
+| Performance
+| 1
+| 3.5
+| 4
+
+| Total
+| 8
+| 14
+| 9
+
+| RANK
+| 3
+| 1
+| 2
+|====
+
+.Some quotes from sites referenced previously
+* Flutter offers a lot more pre-built widgets and it’s built specifically to create beautiful mobile UIs it must be seriously considered.
+* Maintenance of React native application can be a pain when multiple third party libs are involved. Most of the upgrades will break parts of the app.
+* Lack in mobile performance has been the force behind Facebook’s decision to completely overhaul React Native. They stopped using it for their messenger and re-wrote it in native code.
+* React Native may seem like the easiest of the bunch because everybody knows JS, but as the application becomes more complicated, Flutter might take the first place. In any case, if you have decided to go with React Native do not use Typescript – it’s a trap!
+* A properly chosen framework partly defines the overall success of the project. Flutter framework brings cross-platform development to the next level.
+* At the stage of creating React Native, it wasn’t planned to become such a successful tool. Initially, it was just Facebook’s internal project for Hackathon.
+* As JavaScript is widely used by most web developers, it’s easy to adopt the React Native framework. Dart also has a great feature set but it’s rarely used and less known in the developer community.
+* Flutter is rich in development APIs and UI components while React Native is too much dependent on third-party libraries.
+* Flutter has a great build automation tooling and can be used to deploy apps from the command line. React Native apps lack support for the CLI tools that are officially supported for build automation.

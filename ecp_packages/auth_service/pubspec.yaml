@@ -1,0 +1,34 @@
+name: auth_service
+description: A new flutter plugin project.
+version: 0.0.1
+homepage: http://www.toshibatec-eu.com/
+publish_to: none
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: '>=1.20.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^8.0.1
+  flutter_bloc: ^8.0.0
+  flutter_appauth: ^1.1.0
+  equatable: ^2.0.3
+  http: ^0.13.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+  bloc_test: ^9.0.1
+  build_runner:
+  mocktail: ^0.2.0
+  mockito: ^5.0.16
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.tgcs.auth_service
+        pluginClass: AuthServicePlugin

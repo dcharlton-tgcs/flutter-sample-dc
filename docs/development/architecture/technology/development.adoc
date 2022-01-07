@@ -1,0 +1,48 @@
+=== Development
+
+This looks at the technical environment and developer ecosystem.
+
+|====
+|| React Native | Flutter | iOS/ Andriod
+
+| Language
+| JavaScript (or Typescript)TypeScript is a superset of JavaScript
+| Dart
+| Objective-C / Swift / Java / Kotlin
+
+| Implementation
+| Fast
+| Fast
+| Slow
+
+| Ease of Use
+| Easy
+| Easy
+| Hard
+
+| Portability
+| iOS / Android (Web via Expo)
+| iOS / Android / Web / Windows / Mac OS (+ more)
+| iOS or Android
+
+| Connectivity
+| Average
+| Good
+| Best
+
+| Maintenance
+| Average
+| Good
+| Average
+
+| Score
+| 4.5
+| 5.5
+| 2
+|====
+
+.References 
+* https://existek.com/blog/flutter-vs-react-native-in-2021
+* https://chariotsolutions.com/blog/post/react-native-vs-flutter-vs-native-an-ultimate-guide-to-decision-makers
+* https://www.simform.com/react-native-vs-flutter
+* https://medium.com/flawless-app-stories/flutter-vs-react-native-a-developers-perspective-8914ca240a89

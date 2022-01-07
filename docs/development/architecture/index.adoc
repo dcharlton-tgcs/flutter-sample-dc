@@ -1,0 +1,13 @@
+== Technology
+
+The selection of Flutter for this project was based on the following technical research carried out in April 2021.
+
+include::technology/overview.adoc[]
+
+include::technology/development.adoc[]
+
+include::technology/quality-support.adoc[]
+
+include::technology/performance.adoc[]
+
+include::technology/conclusion.adoc[]

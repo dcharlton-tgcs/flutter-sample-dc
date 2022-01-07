@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ecp_logger.iml" filepath="$PROJECT_DIR$/ecp_logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/ecp_logger_android.iml" filepath="$PROJECT_DIR$/android/ecp_logger_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/ecp_logger_example_android.iml" filepath="$PROJECT_DIR$/example/android/ecp_logger_example_android.iml" />
+    </modules>
+  </component>
+</project>

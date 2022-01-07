@@ -1,0 +1,22 @@
+{
+    "name": "ui_flutter_app",
+    "version": "1.0.0",
+    "description": "ECS mobile application",
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "prepare": "husky install",
+        "test": "npm run flutter:test",
+        "flutter:test": "flutter test --coverage --test-randomize-ordering-seed random",
+        "flutter:coverage": "genhtml coverage/lcov.info -o coverage"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^12.0.0",
+        "@commitlint/config-conventional": "^12.0.0",
+        "concurrently": "^6.0.0",
+        "husky": "^6.0.0",
+        "json-server": "~0.16.0",
+        "nodemon": "^2.0.0",
+        "wait-on": "^5.0.0"
+    }
+}

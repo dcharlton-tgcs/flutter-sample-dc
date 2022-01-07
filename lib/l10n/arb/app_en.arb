@@ -1,0 +1,250 @@
+{
+  "@@locale": "en",
+  "launchScreenText": "Please wait...",
+  "@launchScreenText": {
+    "description": "Text shown on the launch screen"
+  },
+  "processingScreenText": "Processing transaction...",
+  "@processingScreenText": {
+    "description": "Text shown on the processing screen"
+  },
+  "mobilePosAppBarTitle": "ECP Mobile POS",
+  "@mobilePosAppBarTitle": {
+    "description": "Text shown in the AppBar of the Mobile POS Application"
+  },
+  "welcomeLoginButtonText": "Log in",
+  "@welcomeLoginLabelText": {
+    "description": "Text for log in button on welcome page"
+  },
+  "welcomeOnboardDeviceButtonText": "Onboard device",
+  "@welcomeOnboardDeviceButtonText": {
+    "description": "Text for onboard device button on welcome page"
+  },
+  "welcomeHeadingLabelText": "Welcome to EuroCIS,",
+  "@welcomeHeadingLabelText": {
+    "description": "Text for welcome heading label"
+  },
+  "welcomeLabelText": "What would you like to do today?",
+  "@welcomeLabelText": {
+    "description": "Text for welcome label"
+  },
+  "welcomeHeaderPlaceholder": "Welcome",
+  "@welcomeHeaderPlaceholder": {
+    "description": "Header placeholder for welcome page"
+  },
+  "basketPageHeaderPlaceholder": "Basket page",
+  "@basketPageHeaderPlaceholder": {
+    "description": "Header placeholder for basket page"
+  },
+  "paymentPageHeaderPlaceholder": "Payment",
+  "@paymentPageHeaderPlaceholder": {
+    "description": "Header placeholder for payment page"
+  },
+  "welcomeNeedHelpLabelText": "Need help?",
+  "@welcomeNeedHelpLabelText": {
+    "description": "Text for welcome need help label"
+  },
+  "welcomeErrorLabelText": "There was a problem logging in, please try again.",
+  "@welcomeErrorLabelText": {
+    "description": "Text for welcome error label"
+  },
+  "usernameLabel": "Username",
+  "@usernameLabel": {
+    "description": "Username label from Login Page"
+  },
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": "Password label from Login Page"
+  },
+  "credentialsError": "Credentials error",
+  "@credentialsError": {
+    "description": "Credentials error message"
+  },
+  "badUrlserviceLogin": "Authentication service not available",
+  "@badUrlserviceLogin": {
+    "description": "Error message Login service not found"
+  },
+  "loginButton": "Login",
+  "@loginButton": {
+    "description": "Login button for login page"
+  },
+  "logoutLabel": "Log out",
+  "@logoutLabel": {
+    "description": "Log out label for alert dialog"
+  },
+  "logoutContent": "Are you sure you want to log out?",
+  "@logoutContent": {
+    "description": "Log out content message"
+  },
+  "yesButtonText": "Yes",
+  "@yesButtonText": {
+    "description": "Text for Yes button"
+  },
+  "noButtonText": "No",
+  "@noButtonText": {
+    "description": "Text for No button"
+  },
+  "transactionCompletedHeadingText": "Transaction completed.",
+  "@transactionCompletedHeadingText": {
+    "description": "Text for transaction completed page"
+  },
+  "transactionCompletedPrintReceiptText": "Does the customer want a receipt?",
+  "@transactionCompletedPrintReceiptText": {
+    "description": "Text asking if customer wants receipt printed"
+  },
+  "orderCompletedConfirmation": "Checkout Completed Successfully",
+  "@orderCompletedConfirmation": {
+    "description": "Text for confirmation when checkout has been accepted/completed successfully"
+  },
+  "printReceiptConfirmation": "Receipt Printed Successfully",
+  "@printReceiptConfirmation": {
+    "description": "Alert description when pressing yes for printing receipt"
+  },
+  "printReceiptFailed": "Failed to Print Receipt!",
+  "@printReceiptFailed": {
+    "description": "Failure description when pressing yes for printing receipt"
+  },
+  "retryPrintReceiptText": "Receipt print failed.  Do you want to retry?",
+  "@retryPrintReceiptText": {
+    "description": "Text asking if customer wants to retry receipt printed"
+  },
+  "retryButtonText": "Retry",
+  "@retryButtonText": {
+    "description": "Text for Retry button"
+  },
+  "basketTotalsTotallabelText": "Total:",
+  "@basketTotalsTotallabelText": {
+    "description": "Text for total label"
+  },
+  "basketTotalsItemslabelText": "Items:",
+  "@basketTotalsItemslabelText": {
+    "description": "Text for items label"
+  },
+  "basketCheckoutButtonText": "Proceed to checkout",
+  "@basketCheckoutButtonText": {
+    "description": "Text for the checkout button"
+  },
+  "navbarScanButtonText": "Scan",
+  "@navbarScanButtonText": {
+    "description": "Text for navigation bar scan button"
+  },
+  "navbarKeypadButtonText": "Keypad",
+  "@navbarKeypadButtonText": {
+    "description": "Text for navigation bar keypad button"
+  },
+  "navbarSettingsButtonText": "Settings",
+  "@navbarSettingsButtonText": {
+    "description": "Text for navigation bar settings button"
+  },
+  "navbarBasketButtonText": "Basket page",
+  "@navbarBasketButtonText": {
+    "description": "Text for navigation bar basket button"
+  },
+  "checkoutCouponButtonText": "Coupon",
+  "@checkoutCouponButtonText": {
+    "description": "Text for coupon button on checkout slider"
+  },
+  "checkoutCardButtonText": "Card",
+  "@checkoutCardButtonText": {
+    "description": "Text for card button on checkout slider"
+  },
+  "tenderSliderHeaderLabel": "Select payment method",
+  "@tenderSliderHeaderLabel": {
+    "description": "Text for tender slider header"
+  },
+  "checkoutPaymentConfirmation": "Payment Taken Successfully",
+  "@checkoutPaymentConfirmation": {
+    "description": "Text for confirmation when payment has been successful"
+  },
+  "checkoutPaymentFailed": "Failed to Process Payment",
+  "@checkoutPaymentFailed": {
+    "description": "Text for when payment has failed"
+  },
+  "keypadInputHintText": "Type barcode / Product code",
+  "@keypadInputHintText": {
+    "description": "Keypad input hint text where barcode is inserted"
+  },
+  "keypadClearButtonText": "Clear",
+  "@keypadClearButtonText": {
+    "description": "Clear command will clear the barcode input"
+  },
+  "keypadAddButtonText": "Add",
+  "@keypadAddButtonText": {
+    "description": "Add command adds an item in basket"
+  },
+  "keypadQuantityLabelText": "Number of items",
+  "@keypadQuantityLabelText": {
+    "description": "Label text for keypad field displaying quantity"
+  },
+  "okButtonText": "OK",
+  "@okButtonText": {
+    "description": "Text for OK button"
+  },
+  "slidableDeleteText": "Delete",
+  "@slidableDeleteText": {
+    "description": "Text for slidable delete button"
+  },
+  "errorResetToReadyStateText": "Reset",
+  "@errorResetToReadyStateText": {
+    "description": "Reset to Ready state"
+  },
+  "voidTransactionText": "Void Transaction",
+  "@voidTransactionText": {
+    "description": "Text for void transaction label"
+  },
+  "voidTransactionConfirmationText": "Are you sure you want to void this transaction? This cannot be undone.",
+  "@voidTransactionConfirmationText": {
+    "description": "Text for confirming void transaction"
+  },
+  "closeButtonText": "Close",
+  "@closeButtonText": {
+    "description": "Text for close button"
+  },
+  "unknownItemLabelText": "Unknown item",
+  "@unknownItemLabelText": {
+    "description": "Text for unknown item label"
+  },
+  "blockedItemLabelText": "Item not for sale",
+  "@blockedItemLabelText": {
+    "description": "Text for blocked item label"
+  },
+  "quantityCannotbeZeroLabelText": "Quantity cannot be zero",
+  "@quantityCannotbeZeroLabelText": {
+    "description": "Text for quantity cannot be zero label"
+  },
+  "checkoutAlreadyExistLabelText": "Checkout already exists",
+  "@checkoutAlreadyExistLabelText": {
+    "description": "Text for checkout already exists label"
+  },
+  "morningGreetings": "Good morning, {firstName}!",
+  "@morningGreetings": {
+    "description": "Greet the user by their name in the morning.",
+    "placeholders": {
+      "firstName": {
+        "type": "String",
+        "example": "ECP user"
+      }
+    }
+  },
+  "afternoonGreetings": "Good afternoon, {firstName}!",
+  "@afternoonGreetings": {
+    "description": "Greet the user by their name in the afternoon.",
+    "placeholders": {
+      "firstName": {
+        "type": "String",
+        "example": "ECP user"
+      }
+    }
+  },
+  "userIDLabelText": "User ID {userID}",
+  "@userIDLabelText": {
+    "description": "User identification number",
+    "placeholders": {
+      "userID": {
+        "type": "String",
+        "example": "ECP user ID"
+      }
+    }
+  }
+}
+

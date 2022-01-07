@@ -1,0 +1,38 @@
+=== Performance
+
+This looks at software performance areas based on benchmark results.
+
+|====
+|| React Native | Flutter | iOS/ Andriod
+
+| Interface
+| Flux (JavaScript Bridge)
+| Skia (Native)
+| Native
+
+| CPU Usage
+| Poor
+| Good
+| Best
+
+| Memory usage
+| Average
+| Average
+| Best
+
+| Battery Usage
+| Poor
+| Good
+| Best
+
+| Score
+| 1
+| 3.5
+| 4
+|====
+
+.References
+* https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980
+* https://medium.com/swlh/flutter-vs-react-native-vs-native-deep-performance-comparison-990b90c11433
+* https://sudolabs.io/blog/flutter-and-react-native-performance-overview
+* https://flutter.dev/docs/perf/metrics

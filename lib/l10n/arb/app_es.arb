@@ -1,0 +1,249 @@
+{
+  "@@locale": "es",
+  "launchScreenText": "Espere por favor...",
+  "@launchScreenText": {
+    "description": "Texto que se muestra en la pantalla de inicio"
+  },
+  "processingScreenText": "Procesando transacción...",
+  "@processingScreenText": {
+    "description": "Texto mostrado en la pantalla de procesamiento"
+  },
+  "mobilePosAppBarTitle": "ECP TPV móvil",
+  "@mobilePosAppBarTitle": {
+    "description": "Texto a mostrar en la barra de la aplicación TPV móvil"
+  },
+  "welcomeLoginButtonText": "Iniciar sesión",
+  "@welcomeLoginLabelText": {
+    "description": "Texto para el botón de inicio de sesión en la página de bienvenida"
+  },
+  "welcomeOnboardDeviceButtonText": "Dispositivo a bordo",
+  "@welcomeOnboardDeviceButtonText": {
+    "description": "Texto para el botón del dispositivo integrado en la página de bienvenida"
+  },
+  "welcomeHeadingLabelText": "Bienvenido a EuroCIS,",
+  "@welcomeHeadingLabelText": {
+    "description": "Texto para la etiqueta del título de bienvenida"
+  },
+   "welcomeLabelText": "¿Qué te gustaría hacer hoy?",
+  "@welcomeLabelText": {
+    "description": "Texto para etiqueta de bienvenida"
+  },
+  "welcomeHeaderPlaceholder": "Bienvenido",
+  "@welcomeHeaderPlaceholder": {
+    "description": "Marcador de posición de encabezado para la página de bienvenida"
+  },
+  "basketPageHeaderPlaceholder": "Página de la cesta",
+  "@basketPageHeaderPlaceholder": {
+    "description": "Marcador de posición de encabezado para la página de la cesta"
+  },
+  "paymentPageHeaderPlaceholder": "Pago",
+  "@paymentPageHeaderPlaceholder": {
+    "description": "Marcador de posición de encabezado para la página de pago"
+  },
+  "welcomeNeedHelpLabelText": "¿Necesitas ayuda?",
+  "@welcomeNeedHelpLabelText": {
+    "description": "Texto de bienvenida necesita etiqueta de ayuda"
+  },
+  "welcomeErrorLabelText": "Hubo un problema al iniciar sesión. Vuelve a intentarlo.",
+  "@welcomeErrorLabelText": {
+    "description": "Texto de la etiqueta de error de bienvenida"
+  },
+  "usernameLabel": "Nombre de usuario",
+  "@usernameLabel": {
+    "description": "Etiqueta de nombre de usuario"
+  },
+  "passwordLabel": "Contraseña",
+  "@passwordLabel": {
+    "description": "Etiqueta de contraseña de la página de inicio de sesión"
+  },
+  "credentialsError": "Error de credenciales",
+  "@credentialsError": {
+    "description": "Mensaje error de credenciales"
+  },
+  "badUrlserviceLogin": "Servicio de autenticación no disponible",
+  "@badUrlserviceLogin": {
+    "description": "Mensaje error Servicio login no encontrado"
+  },
+  "loginButton": "Acceso",
+  "@loginButton": {
+    "description": "Botón de inicio de sesión desde la página de inicio de sesión"
+  },
+  "logoutLabel": "Cerrar sesión",
+  "@logoutLabel": {
+    "description": "Etiqueta de cierre de sesión para el cuadro de diálogo de alerta"
+  },
+  "logoutContent": "Estás segura de que quieres cerrar sesión?",
+  "@logoutContent": {
+    "description": "Mensaje de contenido de cierre de sesión"
+  },
+  "yesButtonText": "Sí",
+  "@yesButtonText": {
+    "description": "Texto para el botón Sí"
+  },
+  "noButtonText": "No",
+  "@noButtonText": {
+    "description": "Texto para el botón No"
+  },
+  "transactionCompletedHeadingText": "Transacción completada.",
+  "@transactionCompletedHeadingText": {
+    "description": "Texto para la página de transacción completada"
+  },
+  "transactionCompletedPrintReceiptText": "¿El cliente quiere un recibo?",
+  "@transactionCompletedPrintReceiptText": {
+    "description": "Mensaje de texto preguntando si el cliente desea imprimir el recibo"
+  },
+  "orderCompletedConfirmation": "Pago completado con éxito",
+  "@orderCompletedConfirmation": {
+    "description": "Texto de confirmación cuando el pedido se ha enviado / completado con éxito"
+  },
+  "printReceiptConfirmation": "Recibo impreso correctamente",
+  "@printReceiptConfirmation": {
+    "description": "Descripción de la alerta al presionar sí para imprimir el recibo"
+  },
+  "printReceiptFailed": "¡Error al imprimir el recibo!",
+  "@printReceiptFailed": {
+    "description": "Descripción de la falla al presionar sí para imprimir el recibo"
+  },
+  "retryPrintReceiptText": "Error al imprimir el recibo. ¿Quieres volver a intentarlo?",
+  "@retryPrintReceiptText": {
+    "description": "Mensaje de texto preguntando si el cliente quiere volver a intentar imprimir el recibo"
+  },
+  "retryButtonText": "Rever",
+  "@retryButtonText": {
+    "description": "Botón Texto para reintentar"
+  },
+  "basketTotalsTotallabelText": "Total:",
+  "@basketTotalsTotallabelText": {
+    "description": "Texto para etiqueta total"
+  },
+  "basketTotalsItemslabelText": "Artículos:",
+  "@basketTotalsItemslabelText": {
+    "description": "Texto de la etiqueta de los artículos"
+  },
+  "basketCheckoutButtonText": "Pasar por la caja",
+  "@basketCheckoutButtonText": {
+    "description": "Texto para el botón de pago"
+  },
+  "navbarScanButtonText": "Escanear",
+  "@navbarScanButtonText": {
+    "description": "Texto para el botón de escaneo de la barra de navegación"
+  },
+  "navbarKeypadButtonText": "Teclado",
+  "@navbarKeypadButtonText": {
+    "description": "Texto para el botón del teclado de la barra de navegación"
+  },
+  "navbarSettingsButtonText": "Ajustes",
+  "@navbarSettingsButtonText": {
+    "description": "Texto para el botón de configuración de la barra de navegación"
+  },
+  "navbarBasketButtonText": "Página de la cesta",
+  "@navbarBasketButtonText": {
+    "description": "Texto para el botón de la cesta de la barra de navegación"
+  },
+  "checkoutCouponButtonText": "Cupón",
+  "@checkoutCouponButtonText": {
+    "description": "Texto para el botón de cupón en el control deslizante de pago"
+  },
+  "checkoutCardButtonText": "Tarjeta",
+  "@checkoutCardButtonText": {
+    "description": "Texto para el botón de la tarjeta en el control deslizante de pago"
+  },
+  "tenderSliderHeaderLabel": "Seleccionar método de pago",
+  "@tenderSliderHeaderLabel": {
+    "description": "Texto para el encabezado del control deslizante de licitación"
+  },
+  "checkoutPaymentConfirmation": "Pago realizado correctamente",
+  "@checkoutPaymentConfirmation": {
+    "description": "Mensaje de texto para confirmación cuando el pago se haya realizado correctamente"
+  },
+  "checkoutPaymentFailed": "Error al procesar el pago",
+  "@checkoutPaymentFailed": {
+    "description": "Mensaje de texto para cuando el pago haya fallado"
+  },
+  "keypadInputHintText": "Escriba código de barras / código de producto",
+  "@keypadInputHintText": {
+    "description": "Texto de sugerencia de entrada del teclado donde se inserta el código de barras"
+  },
+  "keypadClearButtonText": "Limpiar",
+  "@keypadClearButtonText": {
+    "description": "El comando Borrar borrará la entrada del código de barras"
+  },
+  "keypadAddButtonText": "Agregar",
+  "@keypadAddButtonText": {
+    "description": "Agregar comando agrega un artículo en la cesta"
+  },
+  "keypadQuantityLabelText": "Número de items",
+  "@keypadQuantityLabelText": {
+    "description": "Texto de etiqueta para el campo del teclado que muestra la cantidad"
+  },
+  "okButtonText": "OK",
+  "@okButtonText": {
+    "description": "Texto para el botón Aceptar"
+  },
+  "slidableDeleteText": "Borrar",
+  "@slidableDeleteText": {
+    "description": "Texto para el botón de eliminación deslizable"
+  },
+  "errorResetToReadyStateText": "Reiniciar",
+  "@errorResetToReadyStateText": {
+    "description": "Restablecer el estado de listo"
+  },
+  "voidTransactionText": "Transacción nula",
+  "@voidTransactionText": {
+    "description": "Texto para etiqueta de transacción nula"
+  },
+  "voidTransactionConfirmationText": "¿Está seguro de que desea anular esta transacción? Esto no se puede deshacer.",
+  "@voidTransactionConfirmationText": {
+    "description": "Texto para confirmar transacción nula"
+  },
+  "closeButtonText": "Cerrar",
+  "@closeButtonText": {
+    "description": "Texto para botón de cierre"
+  },
+  "unknownItemLabelText": "Elemento desconocido",
+  "@unknownItemLabelText": {
+    "description": "Texto de la etiqueta del artículo desconocido"
+  },
+  "blockedItemLabelText": "Artículo no a la venta",
+  "@blockedItemLabelText": {
+    "description": "Texto de la etiqueta del artículo bloqueado"
+  },
+  "quantityCannotbeZeroLabelText": "La cantidad no puede ser cero",
+  "@quantityCannotbeZeroLabelText": {
+    "description": "El texto de la cantidad no puede ser etiqueta cero"
+  },
+  "checkoutAlreadyExistLabelText": "El pago ya existe",
+  "@checkoutAlreadyExistLabelText": {
+    "description": "El texto para el pago ya existe etiqueta"
+  },
+  "morningGreetings": "Buenas dias, {firstName}!",
+  "@morningGreetings": {
+    "description": "Saluda al usuario por su nombre en la mañana.",
+    "placeholders": {
+      "firstName": {
+        "type": "String",
+        "example": "Usuario de ECP"
+      }
+    }
+  },
+  "afternoonGreetings": "Buenas tardes, {firstName}!",
+  "@afternoonGreetings": {
+    "description": "Saluda al usuario por su nombre en la tarde.",
+    "placeholders": {
+      "firstName": {
+        "type": "String",
+        "example": "Usuario de ECP"
+      }
+    }
+  },
+  "userIDLabelText": "Número de identificación de usuario {userID}",
+  "@userIDLabelText": {
+    "description": "ID de usuario",
+    "placeholders": {
+      "userID": {
+        "type": "String",
+        "example": "ID de usuario de ECP"
+      }
+    }
+  }
+}
